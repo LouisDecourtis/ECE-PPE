@@ -72,24 +72,26 @@ L'application est entièrement responsive et compatible avec :
 
 ## 👥 Équipe
 
-Notre équipe est composée d'étudiants passionnés de l'ECE Paris :
+Notre équipe est composée d'étudiants passionnés de l'ECE Paris, spécialisés dans différents domaines de l'ingénierie et du développement :
 
-- **Louis Decourtis** - Chef de Projet & Développeur Frontend
-- **Maxime Dufour** - Développeur Backend & Algorithmes
-- **Camille Laurent** - UI/UX Designer & Développeur Frontend
-- **Thomas Moreau** - Spécialiste IA & Optimisation
-- **Julie Dubois** - Ingénieure Données & Visualisation
+- **Victor DENIS** - Chef de Projet, Intelligence Artificielle
+- **Nicolas LAINE** - Développeur Backend, Algorithmes & Optimisation
+- **Louis DECOURTIS** - Développeur Frontend, UX/UI & Visualisation
+- **Vincent BARE** - Data Scientist, Modélisation & Simulation
+- **Mael DEPREVILLE** - Ingénieur Système, IoT & Capteurs
+- **Pierre-Olivier ROUX-SAVELLI** - Chercheur, Théorie des Jeux
+- **Rémi LAMOULEN** - Ingénieur Qualité, Tests & Documentation
 
 ## 📄 Licence
 
-Ce projet est sous [licence MIT](LICENSE). Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence [MIT](LICENSE).
 
 ## 🔗 Liens Utiles
 
-- [Démo en ligne](https://ece-ppe.netlify.app)
+- [Démo en ligne](https://meek-bienenstitch-84b56b.netlify.app/)
 - [Documentation technique](docs/technical.md)
 - [Rapport de recherche](docs/research.md)
 
 ---
 
- 2025 SmartTraffic | Projet ECE PPE | Louis Decourtis et l'équipe SmartTraffic
+© 2025 SmartTraffic | Projet ECE PPE
