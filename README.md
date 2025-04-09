@@ -88,7 +88,7 @@ Ce projet est sous licence [MIT](LICENSE).
 
 ## 🔗 Liens Utiles
 
-- [Démo en ligne](https://meek-bienenstitch-84b56b.netlify.app/)
+- [Démo en ligne](https://ece-ppe.netlify.app)
 - [Documentation technique](docs/technical.md)
 - [Rapport de recherche](docs/research.md)
 

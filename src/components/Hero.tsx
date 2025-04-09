@@ -162,6 +162,30 @@ export const Hero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="mb-8 text-white max-w-3xl mx-auto bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 shadow-lg"
+          >
+            <h2 className="text-xl md:text-2xl font-space font-medium text-neon-green mb-3 text-center">
+              L'intelligence algorithmique au service des flux
+            </h2>
+            <p className="mb-4 text-sm md:text-base">
+              Nous avons développé un algorithme d'optimisation multi-agent basé sur la théorie des jeux, capable de coordonner dynamiquement des entités en compétition autour d'une ressource commune. Initialement conçu pour la gestion du trafic urbain, notre moteur s'adapte à tout environnement complexe : lignes de production, plateformes logistiques, mobilité douce ou systèmes distribués.
+            </p>
+            
+            <div className="text-center my-4">
+              <span className="text-neon-green font-space font-medium text-lg md:text-xl">
+                Notre vision :
+              </span>
+            </div>
+            
+            <p className="text-sm md:text-base text-center">
+              Fournir une brique technologique ouverte, puissante et librement réutilisable, pour réinventer la gestion des flux à l'échelle des villes, des industries, et des réseaux numériques.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
             <a
