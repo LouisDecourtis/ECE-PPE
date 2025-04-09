@@ -47,12 +47,7 @@ export const OpenSource: React.FC = () => {
   };
 
   return (
-    <section id="opensource" className="py-24 bg-gradient-to-b from-[#0A0A0A] to-[#121212] relative overflow-hidden">
-      {/* Animated background code pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="code-background w-full h-full"></div>
-      </div>
-      
+    <section id="opensource" className="py-24 bg-[#121212] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}

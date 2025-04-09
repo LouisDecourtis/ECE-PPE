@@ -43,29 +43,7 @@ export const Problem: React.FC = () => {
   };
 
   return (
-    <section id="problematique" className="py-24 bg-gradient-to-b from-anthracite to-[#121212] relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full">
-          {Array.from({ length: 20 }).map((_, i) => (
-            <div 
-              key={i}
-              className="absolute bg-neon-green rounded-full"
-              style={{
-                width: Math.random() * 300 + 50,
-                height: Math.random() * 300 + 50,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                opacity: Math.random() * 0.3,
-                filter: 'blur(60px)',
-                animation: `float ${Math.random() * 10 + 10}s infinite ease-in-out`,
-                animationDelay: `${Math.random() * 5}s`
-              }}
-            />
-          ))}
-        </div>
-      </div>
-
+    <section id="problematique" className="py-24 bg-[#121212] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}

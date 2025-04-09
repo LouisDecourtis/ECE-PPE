@@ -339,9 +339,6 @@ export const Solution: React.FC = () => {
 
   return (
     <section id="solution" className="py-24 bg-[#121212] relative overflow-hidden">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}

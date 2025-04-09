@@ -367,29 +367,7 @@ export const Demo: React.FC = () => {
   };
 
   return (
-    <section id="demo" className="py-24 bg-gradient-to-b from-[#121212] to-[#0A0A0A] relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full">
-          {Array.from({ length: 30 }).map((_, i) => (
-            <div 
-              key={i}
-              className="absolute bg-blue-500 rounded-full"
-              style={{
-                width: Math.random() * 4 + 1,
-                height: Math.random() * 4 + 1,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                opacity: Math.random() * 0.3,
-                filter: 'blur(1px)',
-                animation: `pulse ${Math.random() * 5 + 2}s infinite ease-in-out`,
-                animationDelay: `${Math.random() * 5}s`
-              }}
-            />
-          ))}
-        </div>
-      </div>
-
+    <section id="demo" className="py-24 bg-[#121212] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}

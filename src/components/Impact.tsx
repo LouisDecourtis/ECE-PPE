@@ -56,10 +56,7 @@ export const Impact: React.FC = () => {
   };
 
   return (
-    <section id="impact" className="py-24 bg-[#0A0A0A] relative overflow-hidden">
-      {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-radial from-green-900/10 via-transparent to-transparent"></div>
-      
+    <section id="impact" className="py-24 bg-[#121212] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}

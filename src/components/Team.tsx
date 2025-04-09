@@ -184,11 +184,6 @@ export const Team: React.FC = () => {
 
   return (
     <section id="team" className="py-24 bg-[#121212] relative overflow-hidden">
-      {/* Animated background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="team-background w-full h-full"></div>
-      </div>
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
