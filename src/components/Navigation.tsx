@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
+// Correction des identifiants pour qu'ils correspondent exactement aux identifiants des sections
 const sections = [
   { id: 'hero', label: 'Accueil' },
   { id: 'problematique', label: 'Problématique' },
@@ -28,13 +29,16 @@ export const Navigation: React.FC = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [isOpen]);
 
-  // Amélioration de la fonction de défilement
+  // Fonction de défilement simplifiée et robuste
   const scrollToSection = (id: string) => {
+    console.log(`Tentative de défilement vers: #${id}`);
     const element = document.getElementById(id);
+    
     if (element) {
-      // Calculer la position de défilement en tenant compte de la hauteur de la barre de navigation
-      const navHeight = 64; // Hauteur de la barre de navigation (h-16 = 64px)
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      console.log(`Élément trouvé: #${id}`);
+      // Calculer la position de défilement
+      const navHeight = 64; // Hauteur de la barre de navigation
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - navHeight;
 
       // Défilement fluide vers la section
@@ -43,17 +47,12 @@ export const Navigation: React.FC = () => {
         behavior: 'smooth'
       });
 
-      // Mettre à jour la section active
+      // Mettre à jour la section active et fermer le menu
       setActiveSection(id);
-      
-      // Fermer le menu mobile
       setIsOpen(false);
+    } else {
+      console.error(`Élément non trouvé: #${id}`);
     }
-  };
-
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    scrollToSection(id);
   };
 
   return (
@@ -72,10 +71,9 @@ export const Navigation: React.FC = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {sections.map((section) => (
-                <motion.a
+                <motion.button
                   key={section.id}
-                  href={`#${section.id}`}
-                  onClick={(e) => handleLinkClick(e, section.id)}
+                  onClick={() => scrollToSection(section.id)}
                   className={`px-3 py-2 rounded-md text-sm font-space transition-colors ${
                     activeSection === section.id 
                       ? 'text-neon-green' 
@@ -85,56 +83,46 @@ export const Navigation: React.FC = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   {section.label}
-                </motion.a>
+                </motion.button>
               ))}
             </div>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <motion.button
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
-              whileTap={{ scale: 0.95 }}
               aria-expanded={isOpen}
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </motion.button>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-anthracite/95 backdrop-blur-sm border-t border-gray-800"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {sections.map((section) => (
-                <motion.a
-                  key={section.id}
-                  href={`#${section.id}`}
-                  onClick={(e) => handleLinkClick(e, section.id)}
-                  className={`block px-3 py-2 rounded-md text-base font-space ${
-                    activeSection === section.id 
-                      ? 'text-neon-green bg-gray-800/50' 
-                      : 'text-gray-300 hover:text-neon-green hover:bg-gray-800/30'
-                  }`}
-                  whileHover={{ scale: 1.02, x: 5 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {section.label}
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Mobile menu - Utilisation de liens HTML standards pour une compatibilité maximale */}
+      {isOpen && (
+        <div className="md:hidden bg-anthracite/95 backdrop-blur-sm border-t border-gray-800">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {sections.map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className={`block px-3 py-2 rounded-md text-base font-space ${
+                  activeSection === section.id 
+                    ? 'text-neon-green bg-gray-800/50' 
+                    : 'text-gray-300 hover:text-neon-green hover:bg-gray-800/30'
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {section.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

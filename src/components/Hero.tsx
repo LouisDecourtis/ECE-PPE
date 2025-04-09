@@ -135,62 +135,6 @@ export const Hero: React.FC = () => {
         { y: 0, opacity: 1, duration: 1, ease: "power4.out" }
       );
     }
-    
-    // Améliorer la transition avec une animation personnalisée pour un défilement ultra-fluide
-    const handleSmoothScroll = (e: MouseEvent) => {
-      e.preventDefault();
-      const target = e.currentTarget as HTMLAnchorElement;
-      const href = target.getAttribute('href');
-      
-      if (href && href.startsWith('#')) {
-        const targetElement = document.querySelector(href);
-        if (targetElement) {
-          // Position cible
-          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-          // Position actuelle
-          const startPosition = window.pageYOffset;
-          // Distance à parcourir
-          const distance = targetPosition - startPosition;
-          
-          // Durée de l'animation en ms (plus longue pour une transition plus douce)
-          const duration = 1500;
-          let startTime: number | null = null;
-          
-          // Fonction d'animation
-          function animation(currentTime: number) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / duration, 1);
-            
-            // Fonction d'easing pour une transition douce
-            const easeInOutCubic = (t: number) => 
-              t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-            
-            window.scrollTo(0, startPosition + distance * easeInOutCubic(progress));
-            
-            if (timeElapsed < duration) {
-              requestAnimationFrame(animation);
-            }
-          }
-          
-          // Démarrer l'animation
-          requestAnimationFrame(animation);
-        }
-      }
-    };
-    
-    // Ajouter l'écouteur d'événement au bouton
-    const discoverButton = document.querySelector('a[href="#solution"]');
-    if (discoverButton) {
-      discoverButton.addEventListener('click', handleSmoothScroll as EventListener);
-    }
-    
-    // Nettoyer l'écouteur d'événement
-    return () => {
-      if (discoverButton) {
-        discoverButton.removeEventListener('click', handleSmoothScroll as EventListener);
-      }
-    };
   }, []);
 
   return (
