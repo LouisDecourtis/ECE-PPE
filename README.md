@@ -72,18 +72,24 @@ L'application est entièrement responsive et compatible avec :
 
 ## 👥 Équipe
 
-Notre équipe est composée d'étudiants passionnés de l'ECE Paris, spécialisés dans différents domaines de l'ingénierie et du développement.
+Notre équipe est composée d'étudiants passionnés de l'ECE Paris :
+
+- **Louis Decourtis** - Chef de Projet & Développeur Frontend
+- **Maxime Dufour** - Développeur Backend & Algorithmes
+- **Camille Laurent** - UI/UX Designer & Développeur Frontend
+- **Thomas Moreau** - Spécialiste IA & Optimisation
+- **Julie Dubois** - Ingénieure Données & Visualisation
 
 ## 📄 Licence
 
-Ce projet est sous licence [MIT](LICENSE).
+Ce projet est sous [licence MIT](LICENSE). Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## 🔗 Liens Utiles
 
-- [Démo en ligne](https://smart-traffic-optimization.netlify.app)
+- [Démo en ligne](https://ece-ppe.netlify.app)
 - [Documentation technique](docs/technical.md)
 - [Rapport de recherche](docs/research.md)
 
 ---
 
-© 2025 SmartTraffic | Projet ECE PPE
+ 2025 SmartTraffic | Projet ECE PPE | Louis Decourtis et l'équipe SmartTraffic
