@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/LouisDecourtis/ECE-PPE" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#1E1E1E] flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/school/ecole-centrale-electronique/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#1E1E1E] flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:contact@traffic-optimizer.org" 
+                href="mailto:contact@optiflow.fr" 
                 className="w-10 h-10 rounded-full bg-[#1E1E1E] flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -72,16 +72,20 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="#" 
+                  href="https://github.com/LouisDecourtis/ECE-PPE/blob/main/docs/technical.md" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-neon-green transition-colors flex items-center"
                 >
-                  <span>Documentation</span>
+                  <span>Documentation Technique</span>
                   <ExternalLink className="w-3 h-3 ml-1" />
                 </a>
               </li>
               <li>
                 <a 
-                  href="#" 
+                  href="https://github.com/LouisDecourtis/ECE-PPE" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-neon-green transition-colors flex items-center"
                 >
                   <span>GitHub Repository</span>
@@ -90,19 +94,12 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="#" 
+                  href="https://github.com/LouisDecourtis/ECE-PPE/blob/main/docs/research.md" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-neon-green transition-colors flex items-center"
                 >
                   <span>Publications Scientifiques</span>
-                  <ExternalLink className="w-3 h-3 ml-1" />
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-gray-400 hover:text-neon-green transition-colors flex items-center"
-                >
-                  <span>Données de Simulation</span>
                   <ExternalLink className="w-3 h-3 ml-1" />
                 </a>
               </li>
@@ -112,12 +109,12 @@ export const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} OptiFlow. Tous droits réservés.
+            &copy; {currentYear} OptiFlow. Tous droits réservés.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Mentions Légales</a>
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Politique de Confidentialité</a>
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Licences</a>
+            <a href="https://github.com/LouisDecourtis/ECE-PPE/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-300 text-sm">Mentions Légales</a>
+            <a href="https://github.com/LouisDecourtis/ECE-PPE/blob/main/PRIVACY.md" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-300 text-sm">Politique de Confidentialité</a>
+            <a href="https://github.com/LouisDecourtis/ECE-PPE/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-300 text-sm">Licences</a>
           </div>
         </div>
       </div>

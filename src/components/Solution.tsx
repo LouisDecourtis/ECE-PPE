@@ -241,6 +241,20 @@ export const TrafficIntersection = () => {
         <meshStandardMaterial color="white" /> {/* Ligne jaune */}
       </mesh>
       
+      {/* Arbres décoratifs dans les zones vertes */}
+      <Tree position={[-5, -0.5, -5]} scale={1.2} />
+      <Tree position={[-8, -0.5, -8]} scale={0.9} />
+      <Tree position={[-7, -0.5, -3]} scale={1.0} />
+      <Tree position={[5, -0.5, -7]} scale={1.3} />
+      <Tree position={[8, -0.5, -5]} scale={0.8} />
+      <Tree position={[7, -0.5, -9]} scale={1.1} />
+      <Tree position={[-6, -0.5, 6]} scale={1.0} />
+      <Tree position={[-9, -0.5, 8]} scale={1.2} />
+      <Tree position={[-4, -0.5, 9]} scale={0.9} />
+      <Tree position={[6, -0.5, 5]} scale={1.1} />
+      <Tree position={[9, -0.5, 7]} scale={0.8} />
+      <Tree position={[8, -0.5, 9]} scale={1.3} />
+      
       {/* Feux de circulation */}
       {/* Nord */}
       <mesh position={[1.8, 0, -3]}>
@@ -302,6 +316,25 @@ export const TrafficIntersection = () => {
           </mesh>
         );
       })}
+    </group>
+  );
+};
+
+// Composant pour représenter un arbre
+const Tree = ({ position = [0, 0, 0], scale = 1 }: { position?: [number, number, number], scale?: number }) => {
+  return (
+    <group position={position} scale={scale}>
+      {/* Tronc de l'arbre */}
+      <mesh position={[0, 0.75, 0]}>
+        <cylinderGeometry args={[0.2, 0.3, 1.5, 8]} />
+        <meshStandardMaterial color="#5D4037" />
+      </mesh>
+      
+      {/* Feuillage de l'arbre (en forme de cône) */}
+      <mesh position={[0, 2, 0]}>
+        <coneGeometry args={[1, 2.5, 8]} />
+        <meshStandardMaterial color="#2E7D32" />
+      </mesh>
     </group>
   );
 };
