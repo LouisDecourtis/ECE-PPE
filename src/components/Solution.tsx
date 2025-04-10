@@ -215,19 +215,19 @@ export const TrafficIntersection = () => {
       {/* Routes */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]}>
         <planeGeometry args={[20, 20]} />
-        <meshStandardMaterial color="green" /> {/* Fond plus foncé */}
+        <meshStandardMaterial color="#79A15C" /> {/* Fond plus foncé */}
       </mesh>
       
       {/* Route Nord-Sud */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.9, 0]}>
         <planeGeometry args={[3, 20]} />
-        <meshStandardMaterial color="#7f8c8d" /> {/* Route gris clair */}
+        <meshStandardMaterial color="#202020" /> {/* Route gris clair */}
       </mesh>
       
       {/* Route Est-Ouest */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.9, 0]}>
         <planeGeometry args={[20, 3]} />
-        <meshStandardMaterial color="#7f8c8d" /> {/* Route gris clair */}
+        <meshStandardMaterial color="#202020" /> {/* Route gris clair */}
       </mesh>
       
       {/* Lignes centrales de la route */}

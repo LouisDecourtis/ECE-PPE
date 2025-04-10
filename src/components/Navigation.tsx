@@ -64,7 +64,7 @@ export const Navigation: React.FC = () => {
             animate={{ opacity: 1 }}
             className="flex-shrink-0 text-neon-green font-space font-bold"
           >
-            SmartTraffic
+            OptiFlow
           </motion.div>
 
           {/* Desktop Navigation */}

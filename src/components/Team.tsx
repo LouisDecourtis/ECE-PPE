@@ -32,7 +32,7 @@ const teamMembers: TeamMember[] = [
     name: "Nicolas LAINE",
     role: "Développeur Backend",
     expertise: "Algorithmes & Optimisation",
-    image: "/images/remi.jpg",
+    image: "/images/nicolas.jpg",
     social: {
       linkedin: "#",
       github: "#",
@@ -43,7 +43,7 @@ const teamMembers: TeamMember[] = [
     name: "Louis DECOURTIS",
     role: "Développeur Frontend",
     expertise: "UX/UI & Visualisation",
-    image: "/images/remi.jpg",
+    image: "/images/louis.jpg",
     social: {
       linkedin: "#",
       github: "#",
@@ -54,7 +54,7 @@ const teamMembers: TeamMember[] = [
     name: "Vincent BARE",
     role: "Data Scientist",
     expertise: "Modélisation & Simulation",
-    image: "/images/remi.jpg",
+    image: "/images/vincent.jpg",
     social: {
       linkedin: "#",
       github: "#",
@@ -65,7 +65,7 @@ const teamMembers: TeamMember[] = [
     name: "Mael DEPREVILLE",
     role: "Ingénieur Système",
     expertise: "IoT & Capteurs",
-    image: "/images/remi.jpg",
+    image: "/images/mael.jpg",
     social: {
       linkedin: "#",
       github: "#",
@@ -76,7 +76,7 @@ const teamMembers: TeamMember[] = [
     name: "Pierre-Olivier ROUX-SAVELLI",
     role: "Chercheur",
     expertise: "Théorie des Jeux",
-    image: "/images/remi.jpg",
+    image: "/images/pierroolivier.jpg",
     social: {
       linkedin: "#",
       github: "#",

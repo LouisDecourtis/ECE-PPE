@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-space font-bold text-white mb-4">Traffic Optimizer</h3>
+            <h3 className="text-xl font-space font-bold text-white mb-4">OptiFlow</h3>
             <p className="text-gray-400 mb-6">
               Optimisation des feux de circulation par théorie des jeux et intelligence artificielle.
               Une solution open source pour des villes plus intelligentes et durables.
@@ -112,7 +112,7 @@ export const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} Traffic Optimizer. Tous droits réservés.
+            © {currentYear} OptiFlow. Tous droits réservés.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Mentions Légales</a>
