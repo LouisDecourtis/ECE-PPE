@@ -19,9 +19,9 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Victor DENIS",
-    role: "Chef de Projet",
-    expertise: "Intelligence Artificielle",
-    image: "/images/remi.jpg",
+    role: "Cloud Student",
+    expertise: "Algorithmes & Optimisation",
+    image: "/images/victor.jpg",
     social: {
       linkedin: "#",
       github: "#",
@@ -30,8 +30,8 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Nicolas LAINE",
-    role: "Développeur Backend",
-    expertise: "Algorithmes & Optimisation",
+    role: "IA Student",
+    expertise: "BigData & IA",
     image: "/images/nicolas.jpg",
     social: {
       linkedin: "#",
@@ -41,7 +41,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Louis DECOURTIS",
-    role: "Développeur Frontend",
+    role: "Cybersecurity Student",
     expertise: "UX/UI & Visualisation",
     image: "/images/louis.jpg",
     social: {
@@ -52,7 +52,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Vincent BARE",
-    role: "Data Scientist",
+    role: "Cybersecurity Student",
     expertise: "Modélisation & Simulation",
     image: "/images/vincent.jpg",
     social: {
@@ -63,8 +63,8 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Mael DEPREVILLE",
-    role: "Ingénieur Système",
-    expertise: "IoT & Capteurs",
+    role: "IA Student",
+    expertise: "BigData & IA",
     image: "/images/mael.jpg",
     social: {
       linkedin: "#",
@@ -74,7 +74,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Pierre-Olivier ROUX-SAVELLI",
-    role: "Chercheur",
+    role: "Product Engineering Student",
     expertise: "Théorie des Jeux",
     image: "/images/pierroolivier.jpg",
     social: {
@@ -85,8 +85,8 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Rémi LAMOULEN",
-    role: "Ingénieur Qualité",
-    expertise: "Tests & Documentation",
+    role: "Embedded System Student",
+    expertise: "Hardware",
     image: "/images/remi.jpg",
     social: {
       linkedin: "#",
