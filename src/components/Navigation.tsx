@@ -74,29 +74,17 @@ export const Navigation: React.FC = () => {
     };
   }, []);
 
-  // Fonction de défilement simplifiée et robuste
+  // Fonction pour faire défiler jusqu'à une section
   const scrollToSection = (id: string) => {
-    console.log(`Tentative de défilement vers: #${id}`);
     const element = document.getElementById(id);
-    
     if (element) {
-      console.log(`Élément trouvé: #${id}`);
-      // Calculer la position de défilement
       const navHeight = 64; // Hauteur de la barre de navigation
+      const additionalOffset = -48; // Offset négatif plus important pour positionner encore plus haut
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - navHeight;
-
-      // Défilement fluide vers la section
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-
-      // Mettre à jour la section active et fermer le menu
+      const offsetPosition = elementPosition - navHeight - additionalOffset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       setActiveSection(id);
       setIsOpen(false);
-    } else {
-      console.error(`Élément non trouvé: #${id}`);
     }
   };
 
@@ -163,7 +151,8 @@ export const Navigation: React.FC = () => {
               href="https://github.com/LouisDecourtis/ECE-PPE"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-2 rounded-full text-gray-300 hover:text-neon-green hover:bg-gray-800/50 border border-gray-700/30 transition-all"
+              className="flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-neon-green hover:bg-gray-800/50 focus:outline-none border border-gray-700/30"
+              aria-label="GitHub"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -173,7 +162,8 @@ export const Navigation: React.FC = () => {
             </motion.a>
             <motion.a
               href="mailto:louis.decourtis@edu.ece.fr"
-              className="flex items-center justify-center p-2 rounded-full text-gray-300 hover:text-neon-green hover:bg-gray-800/50 border border-gray-700/30 transition-all"
+              className="flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-neon-green hover:bg-gray-800/50 focus:outline-none border border-gray-700/30"
+              aria-label="Email"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
